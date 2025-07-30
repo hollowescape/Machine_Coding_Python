@@ -39,3 +39,7 @@ class InvalidDueDateException(LibraryError):
 class InvalidCopiesException(LibraryError):
     """Raised when adding/updating a book with invalid number of copies (e.g., negative)."""
     pass
+
+class LoanNotFoundException(LibraryError):
+    """Raised when a specific loan (by ID) does not exist."""
+    pass
